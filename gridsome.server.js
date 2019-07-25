@@ -9,8 +9,19 @@ const axios = require('axios')
 module.exports = function (api) {
   api.loadSource(async store => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api
-    const data = await axios.get("")
+    // const res = await axios.get('/.netlify/functions/fauna-graphql')
+    // console.log(res)
+    // const ratings = res.data.ratings
+    // const contentType = store.addContentType({
+    //   typeName: 'Ratings'
+    // })
 
+    // for (const item of ratings) {
+      // contentType.addNode({
+      //   title: "My First Post",
+      //   data: "2019-07-09"
+      // })
+    // }
   })
 
   api.createPages(({ createPage }) => {
