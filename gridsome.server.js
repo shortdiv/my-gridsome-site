@@ -9,7 +9,7 @@ const axios = require('axios')
 module.exports = function (api) {
   api.loadSource(async store => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api
-    const res = await axios.get("https://my-gridsome-site.netlify.com/.netlify/functions/fauna-graphql")
+    const res = await axios.get("/.netlify/functions/fauna-graphql")
     const ratings = res.data.ratings ? res.data.ratings : [
       {
         "ref": {
